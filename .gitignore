@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Model checkpoints — large binary files, never commit
+*.pth
+*.pt
+*.ckpt
+checkpoints/
+
+# Dataset — never push raw data (licensing + size)
+datasets/
+ShanghaiTech/
+*.mat
+data/
+
+# Cache files
+*.pkl
+*.pickle
+
+# Images — ignore all except assets folder
+*.jpg
+*.jpeg
+*.png
+*.gif
+!assets/*.png
+!assets/*.jpg
+
+# IDE
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+runs/
+logs/
+
+# Colab
+drive/
