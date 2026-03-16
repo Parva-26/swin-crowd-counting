@@ -99,7 +99,7 @@ L = MSE(pred_density, gt_density) + 0.1 × L1(pred_count, gt_count)
 
 ```
 swin-crowd-counting/
-├── swin_crowd_counting.ipynb   ← Main notebook (run in Google Colab)
+├── swin_crowd_counting_parva.ipynb   ← Main notebook (run in Google Colab)
 ├── requirements.txt
 ├── assets/
 │   ├── density_visualisation.png
