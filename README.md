@@ -31,10 +31,10 @@ Input Image (H × W × 3)
 │   Swin Transformer Backbone   │  ← Pretrained on ImageNet (TIMM)
 │   swin_small_patch4_window7   │
 │                               │
-│  Stage 0 → (H/4,  W/4,  96)  │
-│  Stage 1 → (H/8,  W/8,  192) │
-│  Stage 2 → (H/16, W/16, 384) │
-│  Stage 3 → (H/32, W/32, 768) │
+│  Stage 0 → (H/4,  W/4,  96)   │
+│  Stage 1 → (H/8,  W/8,  192)  │
+│  Stage 2 → (H/16, W/16, 384)  │
+│  Stage 3 → (H/32, W/32, 768)  │
 └───────────────────────────────┘
         ↓ 4 multi-scale feature maps
 ┌───────────────────────────────┐
@@ -48,7 +48,7 @@ Input Image (H × W × 3)
         ↓
 ┌───────────────────────────────┐
 │       Density Head            │
-│  Conv→BN→ReLU → Conv→BN→ReLU │
+│  Conv→BN→ReLU → Conv→BN→ReLU  │
 │  → 1×1 Conv → ReLU            │
 └───────────────────────────────┘
         ↓
@@ -131,7 +131,7 @@ ShanghaiTech/
 ```
 
 ### Run in Google Colab
-1. Open `swin_crowd_counting.ipynb` in [Google Colab](https://colab.research.google.com)
+1. Open `swin_crowd_counting_parva.ipynb` in [Google Colab](https://colab.research.google.com)
 2. Set runtime: `Runtime → Change runtime type → T4 GPU`
 3. Mount Google Drive and update `DATA_ROOT` in Cell 4
 4. Run all cells top to bottom
