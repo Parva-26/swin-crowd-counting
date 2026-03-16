@@ -72,7 +72,11 @@ Input Image (H × W × 3)
 
 > Our model is a general-purpose vision transformer baseline without crowd-counting-specific architectural priors. The gap to SOTA reflects opportunities for domain-specific improvements currently under active investigation.
 
+## Demo
 
+<p>
+  <img src="assets/predicted_count.png" width="45%" />
+</p>
 
 ##  Technical Details
 
