@@ -78,7 +78,7 @@ Input Image (H × W × 3)
         <img src="assets/predicted_count.png" width="45%" />
 </p>
 
-Actual Crowd Count ~ 115  |  Predicted Crowd Count = 102.8
+| Actual Crowd Count ~ 115 | Predicted Crowd Count = 102.8 |
 
 <p>
         <img src="assets/density_visualisation.png" width="45%" />
