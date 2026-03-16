@@ -100,10 +100,11 @@ L = MSE(pred_density, gt_density) + 0.1 × L1(pred_count, gt_count)
 ```
 swin-crowd-counting/
 ├── swin_crowd_counting.ipynb   ← Main notebook (run in Google Colab)
-├── swin_crowd_counting.py      ← Equivalent Python script
 ├── requirements.txt
 ├── assets/
-│   └── sample_density.png      ← Sample prediction output
+│   ├── density_visualisation.png
+│   ├── predicted_count.png
+│   └── validation_metrics.png
 ├── README.md
 └── .gitignore
 ```
