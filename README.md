@@ -7,7 +7,7 @@
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 [![Status](https://img.shields.io/badge/Status-Active%20Research-orange.svg)]()
 
----
+
 
 ##  Project Overview
 
@@ -20,7 +20,7 @@ This project addresses the real-world problem of **automated crowd counting in d
 
 The system predicts a **density map** from a single RGB image, where integrating the map gives the total crowd count. This approach provides both *how many* people are present and *where* they are spatially — far more useful than a simple scalar count.
 
----
+
 
 ##  Architecture
 
@@ -57,7 +57,7 @@ Input Image (H × W × 3)
   count = Σ density_map
 ```
 
----
+
 
 ##  Results
 
@@ -72,7 +72,7 @@ Input Image (H × W × 3)
 
 > Our model is a general-purpose vision transformer baseline without crowd-counting-specific architectural priors. The gap to SOTA reflects opportunities for domain-specific improvements currently under active investigation.
 
----
+
 
 ##  Technical Details
 
@@ -93,7 +93,7 @@ L = MSE(pred_density, gt_density) + 0.1 × L1(pred_count, gt_count)
 - Count preservation through resize
 - Ground truth from ShanghaiTech MATLAB `.mat` annotation files
 
----
+
 
 ##  Repository Structure
 
@@ -108,7 +108,7 @@ swin-crowd-counting/
 └── .gitignore
 ```
 
----
+
 
 ##  Quick Start
 
@@ -135,7 +135,7 @@ ShanghaiTech/
 3. Mount Google Drive and update `DATA_ROOT` in Cell 4
 4. Run all cells top to bottom
 
----
+
 
 ##  Configuration
 
@@ -159,7 +159,7 @@ All hyperparameters are in **Cell 4** of the notebook:
 | `swin_small_patch4_window7_224` | 50M | ~3-4 min |
 | `swin_base_patch4_window7_224` | 88M | ~7-10 min |
 
----
+
 
 ##  Why Swin Transformer?
 
@@ -171,7 +171,7 @@ Standard ViT applies global self-attention across all patches — O(N²) complex
 
 This hierarchy is essential: fine stages capture individual head locations, coarse stages encode global density distribution.
 
----
+
 
 ##  Limitations and Future Work
 
@@ -185,7 +185,7 @@ This is an active research project. Planned improvements:
 - [ ] Evaluate on Part A (denser crowds, target MAE < 80)
 - [ ] Hybrid CNN-Transformer architecture
 
----
+
 
 ##  References
 
@@ -193,13 +193,13 @@ This is an active research project. Planned improvements:
 - Zhang et al., *Single-image crowd counting via multi-column CNN*, CVPR 2016
 - Li et al., *CSRNet: Dilated CNNs for understanding highly congested scenes*, CVPR 2018
 
----
+
 
 ##  License
 
 MIT License
 
----
+
 
 ##  Author
 
