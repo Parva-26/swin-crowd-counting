@@ -75,8 +75,12 @@ Input Image (H × W × 3)
 ## Demo
 
 <p>
-  <img src="assets/predicted_count.png" width="45%" />
+        <img src="assets/predicted_count.png" width="45%" />
 </p>
+<p>
+        <img src="assets/density_visualisation.png" width="45%" />
+</p>
+
 
 ##  Technical Details
 
